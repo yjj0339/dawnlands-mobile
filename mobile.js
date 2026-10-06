@@ -24,7 +24,7 @@ document.addEventListener('visibilitychange',()=>{reset();command(document.hidde
 async function boot(){
  $('launch').disabled=true;$('launch').textContent='正在载入…';$('status').textContent='正在下载引擎与世界资源…';
  try{
-  if('serviceWorker' in navigator){try{await navigator.serviceWorker.register('sw.js');await navigator.serviceWorker.ready;}catch{}}
+  if('serviceWorker' in navigator){try{await navigator.serviceWorker.register('sw.js',{updateViaCache:'none'});await navigator.serviceWorker.ready;}catch{}}
   const manifest=await fetch('pack.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('资源清单下载失败');return r.json();});
   const config={...manifest.config,canvas:$('canvas'),canvasResizePolicy:0,focusCanvas:true,onProgress:(current,total)=>{$('status').textContent=`正在载入引擎 ${Math.round(current/1048576)} MB`;},onPrintError:(...args)=>console.error(...args),onExit:code=>{if(code)showError('游戏停止，错误码 '+code);}};
   engine=new Engine(config);let downloaded=0;const buffer=new Uint8Array(manifest.bytes);
