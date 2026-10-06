@@ -1,48 +1,244 @@
 {
-  "version": "3.0.2-mobile.1",
-  "bytes": 141294640,
+  "version": "3.0.2-mobile.2",
+  "bytes": 141296496,
   "chunks": [
     {
-      "file": "world-00-048db69ae400.bin",
-      "bytes": 25165824,
-      "compressedBytes": 23632513,
+      "file": "world-00-777732ecf80c.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3140272,
       "encoding": "gzip",
-      "sha256": "048db69ae40003f7e57386fde4f994f8b7ef51c19c20d8c4117ad05cbcd2203a"
+      "sha256": "777732ecf80c51f8239d2e08da07d3dddbdb253713dc6fd0300fbf6a9c707825"
     },
     {
-      "file": "world-01-c38daf19253d.bin",
-      "bytes": 25165824,
-      "compressedBytes": 23479740,
+      "file": "world-01-d46876b6e479.bin",
+      "bytes": 4194304,
+      "compressedBytes": 4195441,
       "encoding": "gzip",
-      "sha256": "c38daf19253d0c927b68c40ce6637a75590ac5abc79693638c954e7abc71a6a0"
+      "sha256": "d46876b6e4798bb81df4ec6747a095e4fa41eb0c0758bf93412ea1c9b29277a4"
     },
     {
-      "file": "world-02-1994488940d1.bin",
-      "bytes": 25165824,
-      "compressedBytes": 21940313,
+      "file": "world-02-6e58993afdde.bin",
+      "bytes": 4194304,
+      "compressedBytes": 4195500,
       "encoding": "gzip",
-      "sha256": "1994488940d1ec2505ca6d1a0f6df912490315084443784634e13b89ee0c0a4d"
+      "sha256": "6e58993afddee7e573f234028ff7b6b888f274112f0e9a167be4923c56c623c4"
     },
     {
-      "file": "world-03-6423bbcbc970.bin",
-      "bytes": 25165824,
-      "compressedBytes": 22495712,
+      "file": "world-03-d95ed2ccff16.bin",
+      "bytes": 4194304,
+      "compressedBytes": 4163305,
       "encoding": "gzip",
-      "sha256": "6423bbcbc9709968fb6a91b8f4f9bf8b474a3a6a54911687555927f6ca8c53b7"
+      "sha256": "d95ed2ccff161307de60035ecef30771bbe087eb587604f497aca3973b32b981"
     },
     {
-      "file": "world-04-f96216b5c8f2.bin",
-      "bytes": 25165824,
-      "compressedBytes": 23671243,
+      "file": "world-04-4df57b81a542.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3998611,
       "encoding": "gzip",
-      "sha256": "f96216b5c8f2fe1c3029cea9c080b8d31d092e246b01eea109fcb688d14015bf"
+      "sha256": "4df57b81a54287f763129974a6410d10ee0e9a9e0d66925ffd7ce5cb017b206d"
     },
     {
-      "file": "world-05-f113c531895c.bin",
-      "bytes": 15465520,
-      "compressedBytes": 14096938,
+      "file": "world-05-b4179643b850.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3939437,
       "encoding": "gzip",
-      "sha256": "f113c531895cda361b72dec409a7306ca9e07fa0ede9036a76bd1d8f659354bb"
+      "sha256": "b4179643b85012a9bf6b3493e7b6f078cfd03ec7a0b30c8e7d89dd02657ad038"
+    },
+    {
+      "file": "world-06-131f83be6a68.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3939648,
+      "encoding": "gzip",
+      "sha256": "131f83be6a682f34e74a8b26ad7cc1c31841d9249563b5c2d7ac86c26db54bd2"
+    },
+    {
+      "file": "world-07-83d1bbb556f6.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3961019,
+      "encoding": "gzip",
+      "sha256": "83d1bbb556f68a747bad2a27d6e74dbe8b522d7e12c486ed36666d9e4b5cdf29"
+    },
+    {
+      "file": "world-08-3289797cd29e.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3956359,
+      "encoding": "gzip",
+      "sha256": "3289797cd29ef62a78ae3cd0cf1ea68ff428c781a76750229b6e7a8f65676536"
+    },
+    {
+      "file": "world-09-933e4a0c88ad.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3909262,
+      "encoding": "gzip",
+      "sha256": "933e4a0c88ad80f6a08ef2c8f7bbb76b48c2ba5d8dd8867886a4ef48a423972b"
+    },
+    {
+      "file": "world-10-c311529d5349.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3944922,
+      "encoding": "gzip",
+      "sha256": "c311529d53494d210850e0457c6a3e8c1c1a9644a80b6cec5cd4eb3ede3d300c"
+    },
+    {
+      "file": "world-11-bc1574f78773.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3768864,
+      "encoding": "gzip",
+      "sha256": "bc1574f78773d9fe83f8c87fa6b7e8fa4bac2d236e8f7e24140623016d223d3f"
+    },
+    {
+      "file": "world-12-622ba1d5ee4c.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3719082,
+      "encoding": "gzip",
+      "sha256": "622ba1d5ee4ce5f39601ab2cc2b9543c4471d2799d39c8ca46a9fb580df20a50"
+    },
+    {
+      "file": "world-13-89135a02057b.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3587992,
+      "encoding": "gzip",
+      "sha256": "89135a02057b36a1368812e25727dca2f85a2387e105b93910d62cbdfdafd66f"
+    },
+    {
+      "file": "world-14-8a063fde89c2.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3714874,
+      "encoding": "gzip",
+      "sha256": "8a063fde89c2438a15cae12897d01b4691f49610a60eb0744c05b7d7d8b8f672"
+    },
+    {
+      "file": "world-15-77b26fcf09f7.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3607733,
+      "encoding": "gzip",
+      "sha256": "77b26fcf09f722386ebbf90c5a77164672397ff04158386d98830fc4e23cf3ab"
+    },
+    {
+      "file": "world-16-a50b1de673c8.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3653358,
+      "encoding": "gzip",
+      "sha256": "a50b1de673c8a62d922c384319fa75520931765f473884eff7692ad787766552"
+    },
+    {
+      "file": "world-17-034bdbf0a623.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3667579,
+      "encoding": "gzip",
+      "sha256": "034bdbf0a623e5f4f588041460aac388cdf760a7b41f949062cba72d9c75ed5a"
+    },
+    {
+      "file": "world-18-fb363ee2fa65.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3579341,
+      "encoding": "gzip",
+      "sha256": "fb363ee2fa65daa72a35163d01ab678e7d9ef3acd10dbba6993e34e01dd9a368"
+    },
+    {
+      "file": "world-19-dfec5bcf2fd1.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3948637,
+      "encoding": "gzip",
+      "sha256": "dfec5bcf2fd1b1089c20d4e8683d018b7a108fbed3bfdbdecea7129a0f4c8b5d"
+    },
+    {
+      "file": "world-20-f0c495d9f27d.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3915416,
+      "encoding": "gzip",
+      "sha256": "f0c495d9f27de1c3ec356421619efdcb6eaaa18a82886ffb50b09bbe83841b9c"
+    },
+    {
+      "file": "world-21-a5ab85bec362.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3686976,
+      "encoding": "gzip",
+      "sha256": "a5ab85bec3627e338cc14e3502e2cac651d3d229d56e3d027c6dbab67deb4934"
+    },
+    {
+      "file": "world-22-627bfb077be4.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3481700,
+      "encoding": "gzip",
+      "sha256": "627bfb077be468372da85a8d02d23132f8f0c7d9d725fb6886fd45f935e0e102"
+    },
+    {
+      "file": "world-23-16754fa0ccd4.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3889903,
+      "encoding": "gzip",
+      "sha256": "16754fa0ccd4a32efcc7db2551b537b8fa14b1cc62d4fc0e06df221b49f81fcb"
+    },
+    {
+      "file": "world-24-5831f0eb2c7a.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3940149,
+      "encoding": "gzip",
+      "sha256": "5831f0eb2c7a98389eacf79d97d4b4853134c0cedbeaec7e63867f253135faeb"
+    },
+    {
+      "file": "world-25-f52b9ddbbd08.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3841662,
+      "encoding": "gzip",
+      "sha256": "f52b9ddbbd08c75864ca6fc225fb0ce37a8303956fff980316d59c43c56bf521"
+    },
+    {
+      "file": "world-26-939e5c807e5f.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3945572,
+      "encoding": "gzip",
+      "sha256": "939e5c807e5f01122cf28541311d9d1f0003048e6d3a8089e16a30d057f5f7ed"
+    },
+    {
+      "file": "world-27-51b5cbc299d2.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3986148,
+      "encoding": "gzip",
+      "sha256": "51b5cbc299d23fc3b31d7f0d24fbf441a0afe50c0643e33878741ed7c6049170"
+    },
+    {
+      "file": "world-28-034b1c78352c.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3934669,
+      "encoding": "gzip",
+      "sha256": "034b1c78352c2c041fe9ea85f67b4eb98140dae658729ee35c71f3193432bdce"
+    },
+    {
+      "file": "world-29-ba2729384c76.bin",
+      "bytes": 4194304,
+      "compressedBytes": 4022980,
+      "encoding": "gzip",
+      "sha256": "ba2729384c769c4907d3fb7c5cd4973641acb00357dba8040d47f7fd0bd60769"
+    },
+    {
+      "file": "world-30-66499be57297.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3313591,
+      "encoding": "gzip",
+      "sha256": "66499be57297274f61ba1226375502949403461dddda64fd69616c6c9b3da2f7"
+    },
+    {
+      "file": "world-31-ff4850965bc2.bin",
+      "bytes": 4194304,
+      "compressedBytes": 3997056,
+      "encoding": "gzip",
+      "sha256": "ff4850965bc2d519a17dad50e5f64bdd3086baf2807750cb9d6f4ad52827395c"
+    },
+    {
+      "file": "world-32-604c047e8ca3.bin",
+      "bytes": 4194304,
+      "compressedBytes": 4124438,
+      "encoding": "gzip",
+      "sha256": "604c047e8ca39a757eb5a91c1f85ba906bd2e2fbee8aeaba6d9660a753e8279d"
+    },
+    {
+      "file": "world-33-e897fb390796.bin",
+      "bytes": 2884464,
+      "compressedBytes": 2662958,
+      "encoding": "gzip",
+      "sha256": "e897fb3907960b71a36d725e7e1f043b9d83d4129bd079d792207cdc9140fbd7"
     }
   ],
   "config": {
@@ -52,7 +248,7 @@
     "executable": "index",
     "experimentalVK": true,
     "fileSizes": {
-      "index.pck": 141294640,
+      "index.pck": 141296496,
       "index.wasm": 43699190
     },
     "focusCanvas": true,

@@ -1,0 +1,23 @@
+'use strict';
+const $=id=>document.getElementById(id);
+const input={x:0,y:0,lookX:0,lookY:0,jump:false,sprint:false,harvest:false,commands:[]};
+let state={},engine,portraitDismissed=false,toastTimer,mode='';
+const command=name=>input.commands.push(name);
+const reset=()=>{input.x=input.y=input.lookX=input.lookY=0;input.jump=input.sprint=input.harvest=false;$('knob').style.transform='';};
+function toast(text){$('toast').textContent=text;$('toast').style.opacity='1';clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').style.opacity='0',2800);}
+window.DawnlandsMobile={
+ consume(){const copy={...input,commands:input.commands.splice(0)};input.lookX=input.lookY=0;return copy;},
+ saved(){toast('已保存到本浏览器');},
+ update(value){state=value;if(value.quality)applyQuality(value.quality);const newMode=!value.playing?'title':value.opened?'panel':'world';if(newMode!==mode){reset();mode=newMode;}$('touch-ui').hidden=!value.playing;$('touch-ui').classList.toggle('panel-open',value.opened);$('close-panel').hidden=!value.opened;$('placement').hidden=!value.building;$('actions').hidden=value.building;$('clock').textContent=value.clock;$('stock').textContent=`木 ${value.wood} · 石 ${value.stone} · 板 ${value.plank} · 食 ${value.food} · 研究 ${value.research}`;$('health').textContent=`♥ ${Math.round(value.health)}`;$('goal-title').textContent=value.quest.complete?'继续建设你的世界':`旅程 ${value.quest.index+1} / ${value.chapters}`;$('goal-progress').textContent=value.quest.text;$('target').textContent=value.building?value.hint:value.target;if(value.playing&&!value.persistent&&!sessionStorage.getItem('storageWarn')){sessionStorage.setItem('storageWarn','1');toast('当前浏览器不能持久保存，请下载存档备份');}syncPortrait();},
+ snapshot(){return JSON.parse(JSON.stringify(state));}
+};
+document.querySelectorAll('[data-command]').forEach(button=>button.addEventListener('click',()=>{command(button.dataset.command);if(button.closest('#more-panel'))$('more-panel').hidden=true;}));
+document.querySelectorAll('[data-hold]').forEach(button=>{let pointer=null;button.addEventListener('pointerdown',event=>{event.preventDefault();pointer=event.pointerId;button.setPointerCapture(pointer);input[button.dataset.hold]=true;});const up=event=>{if(event.pointerId!==pointer)return;input[button.dataset.hold]=false;pointer=null;};button.addEventListener('pointerup',up);button.addEventListener('pointercancel',up);button.addEventListener('lostpointercapture',up);});
+let stickPointer=null;const stick=$('joystick');
+function moveStick(event){const rect=stick.getBoundingClientRect();let x=event.clientX-rect.left-rect.width/2,y=event.clientY-rect.top-rect.height/2;const length=Math.hypot(x,y),max=36;if(length>max){x*=max/length;y*=max/length;}input.x=x/max;input.y=y/max;$('knob').style.transform=`translate(${x}px,${y}px)`;}
+stick.addEventListener('pointerdown',e=>{e.preventDefault();stickPointer=e.pointerId;stick.setPointerCapture(stickPointer);moveStick(e);});stick.addEventListener('pointermove',e=>{if(e.pointerId===stickPointer)moveStick(e);});const stopStick=e=>{if(e.pointerId!==stickPointer)return;stickPointer=null;input.x=input.y=0;$('knob').style.transform='';};['pointerup','pointercancel','lostpointercapture'].forEach(name=>stick.addEventListener(name,stopStick));
+let lookPointer=null,lastLook;const look=$('look-zone');look.addEventListener('pointerdown',e=>{e.preventDefault();lookPointer=e.pointerId;lastLook=[e.clientX,e.clientY];look.setPointerCapture(lookPointer);});look.addEventListener('pointermove',e=>{if(e.pointerId!==lookPointer)return;input.lookX+=e.clientX-lastLook[0];input.lookY+=e.clientY-lastLook[1];lastLook=[e.clientX,e.clientY];});['pointerup','pointercancel','lostpointercapture'].forEach(name=>look.addEventListener(name,e=>{if(e.pointerId===lookPointer)lookPointer=null;}));
+async function fullscreen(){try{await document.documentElement.requestFullscreen?.();await screen.orientation?.lock?.('landscape');}catch{}syncPortrait();}
+$('fullscreen').onclick=fullscreen;$('rotate-phone').onclick=fullscreen;$('allow-portrait').onclick=()=>{portraitDismissed=true;syncPortrait();};function syncPortrait(){$('portrait').hidden=!state.playing||state.opened||portraitDismissed||innerWidth>=innerHeight;}
+$('more').onclick=()=>{$('more-panel').hidden=!$('more-panel').hidden;reset();};$('dismiss-more').onclick=()=>$('more-panel').hidden=true;$('guide').onclick=()=>{$('more-panel').hidden=true;$('help').showModal();reset();};$('help-close').onclick=()=>$('help').close();
+document.addEventListener('visibilitychange',()=>{reset();command(document.hidden?'background':'foreground');});window.addEventListener('blur',reset);window.addEventListener('resize',syncPortrait);window.addEventListener('pagehide',()=>{reset();command('background');});
