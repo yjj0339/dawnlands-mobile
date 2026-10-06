@@ -1,0 +1,6 @@
+*.import
+.gdignore
+index.pck
+.runtime/
+reports/
+*save*.json

@@ -1,0 +1,33 @@
+Character source: pixiv Inc.
+(c) 2022 pixiv Inc.
+Asset: VRM1_Constraint_Twist_Sample v1.0.1
+License: VRM Public License 1.0 with the original embedded permissions below.
+https://vrm.dev/en/licenses/1.0/index
+Official source: https://github.com/pixiv/three-vrm
+Commit: 1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7
+Original path: packages/three-vrm/examples/models/VRM1_Constraint_Twist_Sample.vrm
+The code repository MIT license does not replace the model license.
+Dawnlands modifications: Blender conversion, motion retargeting and constraint baking, GLB PBR materials and Godot animation controller.
+Motion: Quaternius Universal Animation Library, CC0 1.0.
+https://quaternius.com/packs/universalanimationlibrary.html
+The original character is externally authored; it is not an original Dawnlands mesh.
+
+{
+  "allowAntisocialOrHateUsage": false,
+  "allowExcessivelySexualUsage": true,
+  "allowExcessivelyViolentUsage": true,
+  "allowPoliticalOrReligiousUsage": true,
+  "allowRedistribution": true,
+  "authors": [
+    "pixiv Inc."
+  ],
+  "avatarPermission": "everyone",
+  "commercialUsage": "corporation",
+  "copyrightInformation": "(c) 2022 pixiv Inc.",
+  "creditNotation": "unnecessary",
+  "licenseUrl": "https://vrm.dev/licenses/1.0/",
+  "modification": "allowModificationRedistribution",
+  "name": "VRM1_Constraint_Twist_Sample",
+  "thumbnailImage": 18,
+  "version": "v1.0.1"
+}

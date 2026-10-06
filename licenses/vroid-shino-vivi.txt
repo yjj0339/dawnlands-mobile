@@ -1,0 +1,39 @@
+Dawnlands character expansion: Shino / Vivi
+Reviewed: 2026-10-03
+
+Original complete VRM characters: VRoid Project / pixiv Inc.
+These are licensed sample models, not original characters authored by Dawnlands.
+
+Shino (Sendagaya Shino)
+Official license statement (CC0):
+https://vroid.pixiv.help/hc/en-us/articles/360013482714-Sendagaya-Shino
+Verified official wording: "The CC license* for this model is CC0."
+Local immutable source: art/renewal22/character-v2/sources/Shino.vrm
+SHA256: 1e177c1a7b14f783a9c48395831db8616260d3bddd4154cb2784b779adca49b5
+Embedded VRM licenseName: CC0
+Playable adaptation: models/hero_shino.glb (诗乃)
+
+Vivi (beta AvatarSample_2)
+Official license statement (CC0):
+https://vroid.pixiv.help/hc/en-us/articles/360014900273
+Verified official wording: "The CC license* for this model is CC0."
+Local immutable source: art/renewal22/character-v2/sources/Vivi.vrm
+SHA256: eaf902e041a7a810f1423599ae75682f61184ab6ef0206da9a8ed9caa8ec3a9d
+Embedded VRM licenseName: CC0
+Playable adaptation: models/hero_vivi.glb (薇薇)
+
+CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Motion source: Quaternius Universal Animation Library, CC0.
+Source and original animation license remain in:
+art/renewal22/character-restart/animations/
+
+Dawnlands adaptation: 52-bone retargeting, eight animation clips, pelvis-based
+coordinated skirt panels, travel gait, opaque inner travel shorts baked in the
+original UVs, preserved facial shapes and hair roots, original material tint,
+alpha and painted facial/fabric detail. Full editable .blend files are retained.
+
+This CC0 grant applies to Shino and Vivi only. The earlier AvatarSample_A/B/C
+characters remain under the separate VRoidPreset A-Z terms; no MIT/CC0 grant is
+asserted for those different assets or their mirror repository.

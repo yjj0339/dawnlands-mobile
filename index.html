@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#e9f3f5"><meta name="apple-mobile-web-app-capable" content="yes"><title>曦界 Dawnlands · 手机网页版</title><link rel="icon" href="index.icon.png"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="mobile.css"></head>
+<body>
+<canvas id="canvas" tabindex="0">浏览器需要支持 WebGL 2.0。</canvas>
+<section id="loading" class="cover"><div class="welcome glass"><span class="eyebrow">DAWNLANDS / MOBILE</span><h1>曦界</h1><p>把一片原野，变成你喜欢的家。</p><p class="sub">采集 · 自由搭建 · 居民生活 · 科技经营</p><button id="launch" class="primary">进入世界</button><progress id="progress" value="0" max="1"></progress><p id="status" role="status">首次游玩需要下载游戏资源；下次可使用缓存。</p><p class="sub">推荐横屏 · 左侧移动，右侧拖动视角<br>独立手机存档，电脑版进度保留。</p><details><summary>如何开始？</summary><p>靠近树木或石块，面对它并长按「采集」。用「建造」放置建筑，用「手册」查看目标、制作、生产与社区经营。「科技」里可用研究点升级，也能完成实践研究获得点数。没有怪物。</p></details><a href="credits.html" target="_blank">制作与素材说明</a></div></section>
+<div id="touch-ui" hidden>
+ <header id="readout" class="glass"><span id="clock"></span><span id="stock"></span><span id="health"></span></header>
+ <div id="goal" class="glass"><b id="goal-title"></b><span id="goal-progress"></span></div>
+ <nav id="nav" class="glass" aria-label="游戏功能"><button data-command="manual">手册</button><button data-command="build">建造</button><button data-command="inventory">背包</button><button data-command="tech">科技</button><button data-command="map">地图</button><button id="more">更多</button></nav>
+ <button id="close-panel" class="glass" data-command="close" hidden>返回世界 ×</button>
+ <div id="look-zone" aria-label="拖动调整视角"></div>
+ <div id="joystick" class="glass" role="application" aria-label="移动摇杆"><span id="knob"></span><small>移动</small></div>
+ <div id="actions"><button id="harvest" class="glass" data-hold="harvest">长按<br>采集</button><button class="glass" data-command="interact">互动</button><button class="glass" data-hold="jump">跳跃</button><button class="glass" data-hold="sprint">奔跑</button><button class="glass" data-command="inspect">详情</button></div>
+ <div id="placement" class="glass" hidden><button data-command="rotate">旋转</button><button data-command="level_down">降层</button><button data-command="level_up">升层</button><button class="primary" data-command="place">放置</button><button data-command="cancel">取消</button></div>
+ <div id="target" class="glass"></div>
+ <div id="more-panel" class="glass" hidden><button data-command="save">保存进度</button><button data-command="backup">下载存档备份</button><button data-command="quality_low">省电画质</button><button data-command="quality_high">较远视距</button><button data-command="home">返回基地</button><button data-command="camera">切换视角</button><button id="fullscreen">全屏 / 横屏</button><button id="guide">操作帮助</button><button id="dismiss-more">收起</button></div>
+</div>
+<div id="portrait" class="glass" hidden>横屏更方便建造与经营 <button id="rotate-phone">横屏游玩</button><button id="allow-portrait">先这样玩</button></div>
+<div id="toast" role="status"></div>
+<dialog id="help" class="glass"><h2>从原野开始</h2><p>① 左摇杆移动，右侧空白处拖动视角；准星对准附近的物品。</p><p>② 长按采集，完成后松手。每次只采集一个目标。</p><p>③ 建造 → 选择建筑 → 调整视角和位置 → 旋转 → 放置。红色预览会显示失败原因。</p><p>④ 手册可制作工具、安排生产、经营社区和查看成长目标；科技页可进行实践研究。</p><p>⑤ 功能窗口内可以滑动列表。按右上角「返回世界」关闭。</p><p>进度会自动保存，也可在「更多」里保存与下载备份。浏览器清理数据会删掉本地进度；请保留备份。</p><button id="help-close" class="primary">开始开拓</button></dialog>
+<script src="index.js"></script><script src="mobile.js"></script>
+</body></html>

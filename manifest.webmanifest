@@ -1,0 +1,17 @@
+{
+  "name": "曦界 Dawnlands · 手机版",
+  "short_name": "曦界",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#e9f3f5",
+  "theme_color": "#e9f3f5",
+  "icons": [
+    {
+      "src": "index.icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

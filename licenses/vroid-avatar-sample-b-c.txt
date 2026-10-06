@@ -1,0 +1,18 @@
+AvatarSample_B / AvatarSample_C - Dawnlands adaptations: hero_hoshi / hero_yuma
+
+Original model and artwork: VRoid Project / pixiv Inc.
+Official B: https://hub.vroid.com/en/characters/7939147878897061040/models/2292219474373673889
+Official C: https://hub.vroid.com/en/characters/1248981995540129234/models/8640547963669442173
+Applicable model terms: https://vroid.pixiv.help/hc/en-us/articles/4402394424089-VRoidPreset-A-Z
+Local sources: art/renewal22/character-v2/sources/AvatarSample_B.vrm and AvatarSample_C.vrm
+Public download mirror pinned to commit c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32:
+https://github.com/tegnike/aituber-kit/tree/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/public/vrm
+
+These assets are NOT CC0, MIT, or original characters modelled from scratch by
+Dawnlands. The AvatarSample / VRoidPreset A-Z model terms remain applicable.
+Preserve these terms when redistributing the models or their artwork.
+
+Dawnlands modifications: Blender import, humanoid animation retargeting,
+relaxed idle and hands, GLB export, material/alpha restoration, runtime anime
+shading, eyelid morphs, bounded hair animation and per-character framing.
+Animations: Quaternius, CC0; see quaternius-animations.txt.

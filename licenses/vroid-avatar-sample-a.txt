@@ -1,0 +1,22 @@
+AvatarSample_A — adapted for Dawnlands as hero_haru_v2
+
+Original model and artwork: VRoid Project / pixiv Inc.
+Official model: https://hub.vroid.com/en/characters/2843975675147313744/models/5644550979324015604
+Applicable model terms: https://vroid.pixiv.help/hc/en-us/articles/4402394424089-VRoidPreset-A-Z
+Local source: art/renewal22/character-v2/sources/AvatarSample_A.vrm
+SHA256: 82754e287e0b26b5d7a1fd223ed0fd5debcabed81f36549fb2c16b201f3e5ca9
+
+Public download mirror pinned to a commit:
+https://raw.githubusercontent.com/tegnike/aituber-kit/c7ea2b65f99ac68bf0621c626b9dedf9c30e2c32/public/vrm/AvatarSample_A.vrm
+
+This asset is NOT licensed under the mirror repository's code license and is
+NOT CC0. The AvatarSample / VRoidPreset A-Z model terms remain applicable.
+The embedded VRM metadata names VRoid Project as the author and allows
+commercial use, modification and redistribution under its linked terms.
+Do not relicense the model or its artwork as CC0.
+
+Dawnlands modifications: Blender import, humanoid animation retargeting,
+relaxed idle and hand poses, GLB export, alpha/material restoration,
+runtime anime shading, blink and bounded secondary hair animation.
+The original model is not an original model authored from scratch by Dawnlands.
+Animations: Quaternius, CC0; see quaternius-animations.txt.

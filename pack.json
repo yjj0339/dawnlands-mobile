@@ -1,0 +1,61 @@
+{
+  "version": "3.0.2-mobile.1",
+  "bytes": 141294544,
+  "chunks": [
+    {
+      "file": "world-00.bin",
+      "bytes": 25165824,
+      "compressedBytes": 23632499,
+      "encoding": "gzip",
+      "sha256": "ddace6412eb9f414b5547a07549e353100a188c87c5c19ab09aa46661ceed1d3"
+    },
+    {
+      "file": "world-01.bin",
+      "bytes": 25165824,
+      "compressedBytes": 23479740,
+      "encoding": "gzip",
+      "sha256": "c38daf19253d0c927b68c40ce6637a75590ac5abc79693638c954e7abc71a6a0"
+    },
+    {
+      "file": "world-02.bin",
+      "bytes": 25165824,
+      "compressedBytes": 21940313,
+      "encoding": "gzip",
+      "sha256": "1994488940d1ec2505ca6d1a0f6df912490315084443784634e13b89ee0c0a4d"
+    },
+    {
+      "file": "world-03.bin",
+      "bytes": 25165824,
+      "compressedBytes": 22495712,
+      "encoding": "gzip",
+      "sha256": "6423bbcbc9709968fb6a91b8f4f9bf8b474a3a6a54911687555927f6ca8c53b7"
+    },
+    {
+      "file": "world-04.bin",
+      "bytes": 25165824,
+      "compressedBytes": 23671243,
+      "encoding": "gzip",
+      "sha256": "f96216b5c8f2fe1c3029cea9c080b8d31d092e246b01eea109fcb688d14015bf"
+    },
+    {
+      "file": "world-05.bin",
+      "bytes": 15465424,
+      "compressedBytes": 14096847,
+      "encoding": "gzip",
+      "sha256": "21a0d0b84ee34d993204700423afacf0d7f8393e67bc0126e1da9cd8f00c4e7d"
+    }
+  ],
+  "config": {
+    "args": [],
+    "canvasResizePolicy": 2,
+    "ensureCrossOriginIsolationHeaders": false,
+    "executable": "index",
+    "experimentalVK": true,
+    "fileSizes": {
+      "index.pck": 141294544,
+      "index.wasm": 43699190
+    },
+    "focusCanvas": true,
+    "gdextensionLibs": []
+  }
+}
